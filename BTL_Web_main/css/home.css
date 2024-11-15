@@ -1,0 +1,269 @@
+.slider {
+  width: 100%;
+  height: 51vw;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__list {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  transition: 1.5s;
+}
+
+.slider__list img {
+  min-width: 100vw;
+  height: 100%;
+}
+
+.slider__buttons {
+  position: absolute;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__buttons button {
+  background-color: transparent;
+  border: none;
+}
+
+.slider__buttons i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.slider__buttons button i:hover {
+  background-color: rgba(66, 65, 65, 0.3);
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+.slider__dots {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slider__dots li {
+  list-style: none;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 10px;
+  border-radius: 20px;
+  transition: 1.5s;
+  cursor: pointer;
+}
+
+.slider__dots li.active {
+  width: 40px;
+}
+
+.b{
+  background-color: black;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  background: #0c0a0a;
+  flex-direction: column;
+}
+
+.main__title__text {
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: Aldrich,微軟正黑體,sans-serif;
+  font-size: 2.2em;
+  margin: 80px 0 40px 0;
+}
+
+.main__product {
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.main__product__item {
+  position: relative;
+  height: 480px;
+  width: 290px;
+  border-radius: 5px;
+  background: #232020;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+.main__product__item__top {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  background: rgba(0, 0, 0, 0.14);
+}
+.main__product__item__top--image{
+  width: 100%;
+  height: 80%;
+}
+
+.main__product__item__bottom {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  border-radius: 0px 0px 20px 20px;
+  background: rgba(0, 0, 0, 0.14);
+}
+
+.main__product__item__bottom__productName {
+  position: absolute;
+  color: white;
+  font-family: Titillium Web, 微軟正黑體, Microsoft JhengHei;
+  font-size: 1rem;
+  font-weight: 400;
+  top: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.main__product__item__bottom__productPrice {
+  position: absolute;
+  left: 20px;
+  bottom: 22px;
+  color: white;
+  text-align: center;
+  font-family:Titillium Web, 微軟正黑體, Microsoft JhengHei;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main__product__item__bottom__addProduct {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  width: 120px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px ;
+  align-items: center;
+  text-align: center;
+}
+
+.main__product__item__bottom__addProduct:hover,
+.main__product__item__top--image:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition: all 0.3s;
+}
+
+.main__viewAllProduct {
+  margin: 10px 0 100px 0;
+  width: 150px;
+  height: 50px;
+  background:#232020;
+  border-radius: 30px;
+  font-family: Montserrat;
+  font-size: 16px;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
+
+.main__viewAllProduct:hover {
+  scale: 1.1;
+  transition: all 0.3s;
+  color: #ffc1a6;
+}
+
+.main__about{
+  background: #0e0d0d;
+  height: 600px;
+}
+
+.main__about__text{
+  margin-top: 100px;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: Aldrich,微軟正黑體,sans-serif;
+  font-size: 2.2em;
+}
+
+
+.service_butt{
+  position: relative;
+  margin: 80px 80px 0 80px;
+  text-decoration: none;
+  font-family: Aldrich,微軟正黑體,sans-serif;
+  font-size: 1.2em;
+  color: white;
+}
+
+.cover{
+  border: 1px solid  rgb(121, 121, 121);
+  position: relative;
+  padding: 40px 200px 40px 200px;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.service_butt:hover{
+  color: white;
+  background: url(../assets/imgs/14141.svg) 50% no-repeat ;
+  transition: all 0.3s;
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.icon1{
+  background: url(../assets/imgs/icon-service_register.5fc387f5.svg) no-repeat;
+  height: 100px;
+  width: 100px;
+  margin-left: 30px;
+}
+
+.icon2{
+  background: url(../assets/imgs/icon-service_join.fb6cd58c.svg) no-repeat;
+  height: 100px;
+  width: 100px;
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 700px) {
+  .main__title__text {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main__title__text {
+    font-size: 30px
+  }
+  .main__title__circle {
+    width: 12px;
+    height: 12px;
+  }
+  .main__title__line {
+    width: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .slider {
+    padding-top: 50px;
+  }
+}

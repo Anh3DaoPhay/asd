@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Metrophobic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  -webkit-user-drag: none;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+
+.header {
+  position: fixed !important;
+  z-index: 1;
+  background: #1c1c1c;
+  height: 80px;
+  width: 100%;
+  padding-left: 280px;
+}
+
+.header__searchPhoneForm input {
+  border-radius: 0;
+  height: 38px;
+  width: 200px;
+  border: none;
+  border: 1px solid black;
+}
+
+.header__searchPhoneForm__button {
+  background: #5b3236;
+  height: 38px;
+  width: 40px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__cartPhoneWrapper {
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header__navBar > li {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.header__navBar > li > a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.header__navBar li a:hover {
+  color: #ffc1a6;
+}
+
+.header__iconBox {
+  position: relative;
+  display: flex;
+  height: 30px;
+}
+
+.header__iconBox img:hover {
+  scale: 1.1;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.header__iconBox__searchBox {
+  position: absolute;
+  top: 150%;
+  left: -15%;
+  width: 330px;
+  height: 45px;
+  border: 1px solid #000;
+  background: #fff;
+  z-index: 1;
+  display: none;
+  animation: growDown 300ms ease-in-out;
+}
+
+.header__iconBox__searchBox__left {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 85%;
+  border: none;
+  text-indent: 10px;
+}
+
+.header__iconBox__searchBox__right {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 15%;
+  background: #1c1c1c;
+  border-left: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__iconBox__cartCount {
+  position: absolute;
+  right: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background: #ba5900;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.activeNav {
+  border-top: solid 2px #ffc1a6;
+}
+
+.activeHeader {
+  position: fixed;
+  justify-content: center;
+  height: 55px;
+}
+
+
+.mainContact {
+  position: relative;
+  width: 100%;
+  height: 435px;
+  background: #d9d9d9;
+}
+
+.footer {
+  width: 100%;
+  background: #1c1c1c;
+  position: sticky;
+}
+
+.footer__main {
+  flex-wrap: wrap;
+}
+
+.footer__main__logoWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__main > div > div >h1 {
+  color: white;
+  margin-bottom: 15px;
+  font-family: Oregano;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.a{
+  display: flex;
+  align-items: center;
+}
+
+.a h1{
+  color: white;
+  margin-bottom: 15px;
+  font-family: Oregano;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.footer__main > div > div > p {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+.footer__main__registerInfo form {
+  display: flex;
+  width: 95%;
+  height: 23px;
+}
+
+.footer__main__support{
+  display: flex;
+
+}
+.footer__main__content{
+  margin: 50px 0 50px 120px;
+}
+.footer__main__registerInfo #emailInfo {
+  width: 183px;
+  height: 23px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(217, 217, 217, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Montserrat;
+  font-size: 8px;
+  font-weight: 600;
+  line-height: normal;
+  text-indent: 10px;
+}
+
+.footer__main__registerInfo button {
+  width: 40px;
+  height: 23px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.footer__main__registerInfo__iconWrapper {
+  margin-top: 10px;
+  width: 115px;
+  height: 25px;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+
+.footer__main__registerInfo__iconWrapper a {
+ margin-right: 5px;
+}
+
+.footer__main__registerInfo__iconWrapper img:hover {
+  scale: 1.1;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.footer__main__line {
+  width: 80%;
+  height: 1px;
+  background: #585050;
+  margin-left: 150px;
+}
+
+.footer__main > h1 {
+  width: 100%;
+  text-align: center;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: black
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background: rgb(53, 51, 51);
+}
+
+@media only screen and (max-width: 1000px) {
+  .header__iconBox__searchBox {
+    left: -200%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    height: auto;
+  }
+  .header__navBar > li {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1010px) {
+  .header__iconBox__searchBox {
+    left: -100%;
+  }
+}
+
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}

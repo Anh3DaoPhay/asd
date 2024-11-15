@@ -1,0 +1,40 @@
+.main {
+  padding-top: 50px;
+  background: #0c0a0a;
+}
+
+.Introduce{
+  position: relative;
+}
+
+.Introduce img{
+  opacity: 0.4;
+}
+
+.Introduce h1 {
+  font-family: Aldrich,微軟正黑體,sans-serif;
+  padding-top: 50px;
+  font-size: 2.2em;
+  color: white;
+}
+
+#subTitle_introduce {
+  font-family: Metrophobic;
+  font-size: 21px;
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.Our_product h1{
+  font-family: Aldrich,微軟正黑體,sans-serif;
+  margin-top: 20px;
+  font-size: 2.2em;
+  color: white;
+  padding-bottom: 80px;
+
+}
+
+.Our_product p{
+  color: white;
+}

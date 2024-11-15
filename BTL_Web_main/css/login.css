@@ -1,0 +1,155 @@
+.section {
+  position: relative;
+  width: 100%;
+  background: url(../assets/imgs/log_in_img.jpg) 100%;
+  height: 1033px;
+  display: flex;
+  justify-content: center;
+  background-attachment: fixed;
+  
+}
+
+
+.section__loginForm {
+  position: absolute;
+  top: 160px;
+  text-transform: uppercase;
+  width: 650px;
+  height: 700px;
+  background: black;
+  filter: drop-shadow(0px 4px 4px rgba(14, 13, 13, 0.36));
+  opacity: 0.8;
+  
+}
+
+.section__loginForm__title {
+  position: absolute;
+  color: white;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  top: 50.18px;
+}
+
+.section__loginForm__line {
+  position: relative;
+  top: 115px;
+  width: 70%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(53, 24, 16, 0) 0%,
+    white 51%,
+    rgba(53, 24, 16, 0) 100%
+  );
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section__loginForm form {
+  position: relative;
+  top: 158.87px;
+  width: 70%;
+  height: 404.005px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section__loginForm form label {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+#accName,
+#password {
+  width: 100%;
+  height: 50px;
+  background: #1C1C1C;
+  border: none;
+}
+
+
+#rememberInput {
+  width: 22.393px;
+  height: 22.839px;
+}
+
+#rememberInputLabel {
+  position: relative;
+  bottom: 5px;
+  color: white;
+  font-family: Montserrat;
+  font-size: 12px;
+}
+
+#passForget {
+  position: absolute;
+  right: 0;
+  color: white;
+  font-family: Montserrat;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 25px;
+}
+#checkboxInput {
+  width: 15px;
+}
+#section__form a {
+  font-size: 12px;
+  text-decoration: none;
+}
+#btnLogin {
+  position: absolute;
+  bottom: 60px;
+  color: white;
+  height: 70px;
+  background-color: #ff6400;
+  font-family: Montserrat;
+  font-size: 24px;
+  letter-spacing: 1.92px;
+}
+.section__loginForm__noAccount {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: Montserrat;
+  font-size: 16px;
+}
+
+#noaccount a {
+  color: white;
+  font-family: Montserrat;
+  font-size: 16px;
+  text-decoration-line: underline;
+}
+
+.form-control{
+  color: white;
+}
+
+.form-control:focus{
+  color: white;
+  outline: 1px solid #ff6400;
+  outline-offset: .25rem;
+}
+
+@media only screen and (max-width: 655px) {
+  .section__loginForm {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .section__loginForm {
+    width: 380px;
+    height: 600px;
+  }
+  .section__loginForm__noAccount {
+    font-size: 13px;
+  }
+}
